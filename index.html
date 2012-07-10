@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tumblr-tags.js"></script>
+	<style type="text/css">
+	body {
+		font:14px/20px Arial, sans-serif;
+	}
+	.tags-container {
+		border: 1px solid #D6D6D6;
+		-webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+		box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+		width: 387px;
+		height: 88px;
+		padding:5px;
+		overflow:scroll;
+	}
+	.tag {
+		background: #EEF8FF;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		border: 1px solid #C1D6E6;
+		padding: 2px 3px;
+		margin:0 5px 5px 0;
+		float:left;
+	}
+	.close {
+		margin:0 3px 4px 5px;
+		background:url(img/close.gif) no-repeat 0 0;
+		width:7px;
+		height:7px;
+		display:inline-block;
+		text-indent:-9999em;
+		vertical-align:middle;
+	}
+	.close:hover {
+		background:url(img/close.gif) no-repeat 0 100%;
+	}
+	
+	#tumblr-tags {
+		border:0 none;
+		outline:0;
+		font-size: 14px;
+	}
+	
+	</style>
+</head>
+
+<body>
+	<h2>Tumblr like tags</h2>
+	<div class="tags-container">
+		<input type="text" name="" id="tumblr-tags" value="" />
+	</div>
+	</body>
+</html>
