@@ -7,6 +7,16 @@
        $tagContainer.bind('click', function(){
        		$('input').focus();
        });
+       
+       //не сабмитим именно это поле с тегами
+       if($tagField.focus()) {
+           $tagField.keydown(function(e){
+               if(e.keyCode == 13) {
+                   e.preventDefault();
+                   return false;
+               }
+           });
+       }
               
     	$tagField.keyup(function(e, keyCode){
     	    keyCode = keyCode || e.keyCode;
